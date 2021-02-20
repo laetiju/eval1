@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Sriracha&display=swap');
+
+:root {
+--body-font: "Raleway", sans-serif;
+--brand-font: "Sriracha";
+
+
+}
+
+
 .nav {
     padding: 40px 0px 40px 0px;
     background-color:#383e56;
     margin: 0%;
     display:flex;
+   
+    
 }
 
 .brand {
@@ -11,16 +23,78 @@ width: 40%;
 color: aliceblue;
 display:flex;
 justify-content: center;
-}
+font-family: var(--brand-font);
 
+}
 
 .menu {
     width: 50%;
     display:flex;
     align-items:flex-end;
     justify-content: space-around;
-
+    font-family: var(--body-font);
 }
+
+.line::after {
+    content:"";
+    position: absolute;
+    top: 50px;
+    border-style: 10px solid;
+    border-bottom-color: #d65050;
+    
+}
+
+
 a:link {
     color: aliceblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#d65050;
+    text-decoration: underline;
+}
+
+
+.title-head {
+    margin-top: 40px;
+    text-align: center;
+    line-height: normal;
+    text-transform: uppercase;
+    
+    
+  
+}
+
+.activity {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: var(--body-font)
+}
+
+.card {
+
+    display: flex;
+    align-items:center;
+    
+}
+
+.svg {
+    margin-top: 10px;
+}
+.card-title {
+    
+    color: #d65050;
+    
+
+}
+
+.card-text {
+    display:flex;
+    align-items:center;
+    text-align: center;
+
+
 }
