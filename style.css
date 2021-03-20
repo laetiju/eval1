@@ -7,6 +7,7 @@
 
 }
 
+/* barre de navigation */
 
 .nav {
     padding: 40px 0px 40px 0px;
@@ -33,34 +34,77 @@ font-family: var(--brand-font);
     align-items:flex-end;
     justify-content: space-around;
     font-family: var(--body-font);
+    color:aliceblue;
 }
 
-.line::after {
-    content:"";
-    position: absolute;
-    top: 50px;
-    border-style: 10px solid;
-    border-bottom-color: #d65050;
-    
-}
-
-
-a:link {
-    color: aliceblue;
+.text-light {
     text-decoration: none;
 }
 
-a:hover {
-    color:#d65050;
-    text-decoration: underline;
+
+
+
+/* dopdown-menu */
+
+.dropbtn {
+    background-color: #383e56;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+
 }
 
+.dropdown {
+    position : relative;
+    display: inline-block; 
+
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute; 
+    background-color: #383e56;
+    border-top: 8px solid;
+    border-top-color: #d65050;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    
+    color:aliceblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block; 
+}
+
+.dropdown-content a:hover {
+    background-color:white;
+}
+
+.dropdown:hover .dropdown-content {
+    display : block;
+   
+
+}
+
+.dropdown:hover .dropbtn {
+    background-color:#383e56;
+}
+
+/* section activité */
 
 .title-head {
     margin-top: 40px;
+    margin-left: 550px;
+    margin-right: 500px;
     text-align: center;
-    line-height: normal;
     text-transform: uppercase;
+    color: #d65050;
+    border-bottom: 2px solid;
+    border-color: #383e56;
     
     
   
@@ -75,7 +119,7 @@ a:hover {
 }
 
 .card {
-
+    margin-top: 2em;
     display: flex;
     align-items:center;
     
@@ -85,8 +129,9 @@ a:hover {
     margin-top: 10px;
 }
 .card-title {
-    
+    margin-top: 1em;
     color: #d65050;
+    
     
 
 }
@@ -98,3 +143,71 @@ a:hover {
 
 
 }
+
+/* section professeur */ 
+
+.title-professor {
+    margin-top: 40px;
+    margin-left: 490px;
+    margin-right: 500px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d65050;
+    border-bottom: 2px solid;
+    border-color: #383e56;
+}
+
+.professor {
+    margin-top: 40px;
+    display:flex;
+    justify-content:space-around;
+}
+
+.text-professor {
+    margin-top: 40px;
+    display: flex;
+    justify-content:space-around;
+    
+}
+
+.text-professor > h5 {
+    color:#d65050;
+    
+
+}
+
+/* section événement */
+
+.title-event {
+    margin-top: 40px;
+    margin-left: 490px;
+    margin-right: 500px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d65050; 
+    border-bottom: 2px solid;
+    border-color: #383e56;
+}
+
+
+.events {
+
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: var(--body-font)
+}
+  
+
+.card-body{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+
+}
+
+a .btn {
+    width: 20px;
+}  
+
