@@ -1,7 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&family=Varela+Round&display=swap');
+@keyframes SlideIn {
+    0% {
+       opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes Rotation {
+    0% {
+        transform: rotate(3deg);
+    }
+    50% {
+        transform: rotate(160deg);
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+*,
+*::before,
+*::after {
+  margin: 5px;
+  
+  box-sizing: border-box;
+}
+
 
 :root {
---body-font: "Raleway", sans-serif;
+--body-font: "Varela Round", sans-serif;
 --brand-font: "Sriracha";
 
 
@@ -10,6 +38,7 @@
 /* barre de navigation */
 
 .nav {
+    margin-top: 0%;
     padding: 40px 0px 40px 0px;
     background-color:#383e56;
     margin: 0%;
@@ -47,10 +76,9 @@ font-family: var(--brand-font);
 /* dopdown-menu */
 
 .dropbtn {
-    background-color: #383e56;
+    background-color: hsl(228, 21%, 28%);
     color: aliceblue;
     border: none;
-    cursor: pointer;
     text-decoration: none;
 
 }
@@ -73,7 +101,7 @@ font-family: var(--brand-font);
 }
 
 .dropdown-content a {
-    
+    float: none;
     color:aliceblue;
     padding: 12px 16px;
     text-decoration: none;
@@ -81,11 +109,12 @@ font-family: var(--brand-font);
 }
 
 .dropdown-content a:hover {
-    background-color:white;
+    background-color:#d65050;
+    color: aliceblue;
 }
 
 .dropdown:hover .dropdown-content {
-    display : block;
+    display : block ;
    
 
 }
@@ -140,6 +169,7 @@ font-family: var(--brand-font);
     display:flex;
     align-items:center;
     text-align: center;
+    font-family: var(--body-font)
 
 
 }
@@ -160,7 +190,25 @@ font-family: var(--brand-font);
 .professor {
     margin-top: 40px;
     display:flex;
-    justify-content:space-around;
+    justify-content:center;
+    
+
+}
+
+.img1 {
+    background-color:#d65050;
+    display: none;
+    
+
+    
+}
+
+
+img:hover + div.img1 {
+    display :block;
+    padding: 40px 30px 40px 30px;
+    animation: SlideIn ease-in-out 2s;
+    
 }
 
 .text-professor {
@@ -209,5 +257,50 @@ font-family: var(--brand-font);
 
 a .btn {
     width: 20px;
-}  
+} 
+
+/* section count */
+
+.count{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color:#d65050;
+    display: flex;
+    justify-content:center;
+    flex-direction:row;
+    
+}
+
+.count> .card {
+    border : none;
+    background-color:#d65050;
+    color: aliceblue;
+    padding: 40px 50px 40px 50px;
+    
+}
+
+.card-body {
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.card-body> svg {
+    width: 80px;
+    height: 80px; 
+    margin-bottom: 30px;  
+}
+div.card-body> svg:hover {
+    animation: Rotation linear 2s;
+    
+}
+
+
+div.card-body> .number {
+    font-size: 50px;
+
+    
+}
 
