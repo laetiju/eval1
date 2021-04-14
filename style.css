@@ -301,6 +301,84 @@ div.card-body> svg:hover {
 div.card-body> .number {
     font-size: 50px;
 
+}
+
+/* section réseaux */
+
+.title-socialMedia{
+    margin-top: 40px;
+    margin-left: 490px;
+    margin-right: 500px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d65050;
+    border-bottom: 2px solid;
+    border-color: #383e56;
+}
+
+.logoMedia {
+    margin-top:100px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    display:flex;
+    justify-content: center;
+    
+    
+
+}
+
+.twitter, .facebook {
+    padding: 20px 50px 20px 50px;
+    display:flex;
+    align-items:center;
+    
+
+}
+
+
+.twitter> h4 {
+    color :#383e56;
+    font-size: 30px;
     
 }
+
+.twitter> svg {
+    color:#d65050;
+    width: 80px;
+    height: 80px;
+}
+
+
+
+.facebook> h4 {
+    color :#383e56;
+    font-size: 30px;
+    
+}
+
+.facebook> svg {
+    color:#d65050;
+    width: 80px;
+    height: 80px;
+   
+}
+
+/* footer */
+
+.footerText {
+    margin-left: 50%;
+    margin-bottom: 30px;
+    padding: 20px 30px 20px 30px;
+    background-color: black;
+    
+}
+
+.movieClub {
+    margin-bottom: 30px;
+    padding: 20px 30px 20px 30px;
+    background-color: #d65050;
+    
+}
+
+
 
