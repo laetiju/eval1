@@ -365,20 +365,31 @@ div.card-body> .number {
 
 /* footer */
 
-.footerText {
-    margin-left: 50%;
+footer{
+    display: flex;
+    justify-content:row;
     margin-bottom: 30px;
-    padding: 20px 30px 20px 30px;
-    background-color: black;
-    
 }
 
 .movieClub {
-    margin-bottom: 30px;
-    padding: 20px 30px 20px 30px;
-    background-color: #d65050;
-    
+    width: 100%;
+    padding: 10px 40px 10px 40px;
+    justify-content: flex-end;
 }
+
+.footerText{
+    
+    padding: 20px 40px 20px 40px;
+    background-color:#383e56;
+    color:aliceblue;
+    justify-content: flex-end;
+}
+
+.footerText> svg{
+    color:#d65050;
+
+}
+
 
 
 
