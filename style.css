@@ -22,7 +22,7 @@
 *,
 *::before,
 *::after {
-  margin: 5px;
+  margin: 2px;
   
   box-sizing: border-box;
 }
@@ -37,12 +37,19 @@
 
 /* barre de navigation */
 
-.nav {
+header>.container-fluid {
     margin-top: 0%;
+    position: relative;
+
+}
+
+.nav {
+    margin-top: 0;
     padding: 40px 0px 40px 0px;
     background-color:#383e56;
     margin: 0%;
-    display:flex;
+    
+    
    
     
 }
@@ -372,9 +379,9 @@ footer{
 }
 
 .movieClub {
-    width: 100%;
     padding: 10px 40px 10px 40px;
     justify-content: flex-end;
+    background-color:black;
 }
 
 .footerText{
