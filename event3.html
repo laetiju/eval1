@@ -10,31 +10,40 @@
 </head>
 <body>
     <header>
-        <div class="container-fluid">
-            <ul class="nav">
-                <li class="brand">
-                   <h1>Chia Sé Fight Viet Vo Dao</h1> 
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Chia Sé Fight Viet Vo Dao</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Accueil</a>
                 </li>
-                <li class="menu">
-                    <a href="./index.html" class="text-light" >Accueil</a>   
-                    <div class="dropdown">
-                        <button class="dropbtn">Viet Vo Dao</button> 
-                            <div class="dropdown-content">
-                        <a href="#">Histoire</a>
-                        <a href="#">Les Techniques</a>
-                        <a href="#">Lexique</a>
-                    </div>
-                    </div>
-                     
-                    <a href="#" class="text-light">Le club</a>
-                    <a href="./event.html" class="text-light">Évènements</a>
-                    <a href="#" class="text-light">Médias</a>
-                    <a href="#" class="text-light">Contact</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Le club</a>
                 </li>
-            </ul>
-        </div>
-
-    </header>
+                  <a class="nav-link" href="./event.html">Événements</a>
+                  <a class="nav-link" href="#">Médias</a>
+                  <a class="nav-link" href="#">Contacts</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Viet Vo Dao
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Histoire</a></li>
+                    <li><a class="dropdown-item" href="#">Les Techniques</a></li>
+                    <li><a class="dropdown-item" href="#">Lexique</a></li>
+                  </ul>
+                </li>
+              </ul>
+          
+            </div>
+          </div>
+        </nav>
+         </header>
 
     <section>
         <div class="container">

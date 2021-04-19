@@ -19,6 +19,7 @@
         transform: rotate(360deg)
     }
 }
+
 *,
 *::before,
 *::after {
@@ -27,97 +28,48 @@
   box-sizing: border-box;
 }
 
+@media (min-width: 320px) and (max-width:750px) {
+    html{
+        width:100%;
+    }
+}
+
+
+
 
 :root {
 --body-font: "Varela Round", sans-serif;
 --brand-font: "Sriracha";
+}
 
-
+html {
+    scroll-behavior: smooth;
 }
 
 /* barre de navigation */
 
-header>.container-fluid {
-    margin-top: 0%;
-    position: relative;
-
-}
-
-.nav {
-    margin-top: 0;
-    padding: 40px 0px 40px 0px;
+nav{
     background-color:#383e56;
     margin: 0%;
-    
-    
-   
-    
 }
 
-.brand {
+.navbar-brand {
 margin-left: 40px;
 width: 40%;
 color: aliceblue;
 display:flex;
 justify-content: center;
 font-family: var(--brand-font);
+background-color:#383e56;
 
 }
 
-.menu {
-    width: 50%;
-    display:flex;
-    align-items:flex-end;
-    justify-content: space-around;
-    font-family: var(--body-font);
-    color:aliceblue;
-}
-
-.text-light {
-    text-decoration: none;
-}
-
-
-
-
-/* dopdown-menu */
-
-.dropbtn {
-    background-color: hsl(228, 21%, 28%);
+.nav-link {
     color: aliceblue;
-    border: none;
-    text-decoration: none;
-
 }
 
-.dropdown {
-    position : relative;
-    display: inline-block; 
-
-}
-
-.dropdown-content {
-    display: none; 
-    position: absolute; 
-    background-color: #383e56;
-    border-top: 8px solid;
-    border-top-color: #d65050;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color:aliceblue;
-    padding: 12px 16px;
-    text-decoration: none;
-    display:block; 
-}
-
-.dropdown-content a:hover {
-    background-color:#d65050;
-    color: aliceblue;
+.nav-link:hover {
+    color:#d65050;
 }
 
 .dropdown:hover .dropdown-content {
@@ -142,8 +94,14 @@ font-family: var(--brand-font);
     border-bottom: 2px solid;
     border-color: #383e56;
     
-    
-  
+}
+
+@media (min-width: 320px) and (max-width:750px) {
+    .title-head {
+        margin-left: 30%;
+        margin-right:30%;
+        margin-top: 10%;
+    }
 }
 
 .activity {
@@ -151,25 +109,22 @@ font-family: var(--brand-font);
     display: flex;
     justify-content: center;
     flex-direction: row;
-    font-family: var(--body-font)
+    font-family: var(--body-font);
 }
 
 .card {
     margin-top: 2em;
     display: flex;
     align-items:center;
-    
 }
 
 .svg {
     margin-top: 10px;
 }
+
 .card-title {
     margin-top: 1em;
-    color: #d65050;
-    
-    
-
+     color: #d65050
 }
 
 .card-text {
@@ -177,8 +132,18 @@ font-family: var(--brand-font);
     align-items:center;
     text-align: center;
     font-family: var(--body-font)
+}
 
 
+@media (min-width: 320px) and (max-width:750px) {
+    .activity{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+    
+   
 }
 
 /* section professeur */ 
@@ -194,20 +159,23 @@ font-family: var(--brand-font);
     border-color: #383e56;
 }
 
+@media (min-width: 320px) and (max-width:750px) {
+    .title-professor{
+        margin-left: 30%;
+        margin-right:30%;
+        margin-top: 10%;
+    }
+}
+
 .professor {
     margin-top: 40px;
     display:flex;
     justify-content:center;
-    
-
 }
 
 .img1 {
     background-color:#d65050;
     display: none;
-    
-
-    
 }
 
 
@@ -216,6 +184,13 @@ img:hover + div.img1 {
     padding: 40px 30px 40px 30px;
     animation: SlideIn ease-in-out 2s;
     
+}
+
+@media (min-width: 320px) and (max-width:750px) {
+    .professor {
+        display:flex;
+        flex-direction:column;
+    }
 }
 
 .text-professor {
@@ -227,8 +202,6 @@ img:hover + div.img1 {
 
 .text-professor > h5 {
     color:#d65050;
-    
-
 }
 
 /* section événement */
@@ -245,8 +218,15 @@ img:hover + div.img1 {
 }
 
 
-.events {
+@media (min-width: 320px) and (max-width:750px) {
+    .title-event {
+        margin-left: 30%;
+        margin-right:30%;
+        margin-top: 10%
+    }
+}
 
+.events {
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -259,12 +239,20 @@ img:hover + div.img1 {
     display:flex;
     justify-content:center;
     flex-direction: column;
-
 }
 
 a .btn {
     width: 20px;
 } 
+
+@media (min-width: 320px) and (max-width:750px) {
+    .events {
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        justify-content:center;
+    }
+}
 
 /* section count */
 
@@ -275,7 +263,13 @@ a .btn {
     display: flex;
     justify-content:center;
     flex-direction:row;
-    
+}
+
+@media (min-width: 320px) and (max-width:750px) {
+    .count {
+        display:flex;
+        flex-direction: column;
+    }
 }
 
 .count> .card {
@@ -283,15 +277,12 @@ a .btn {
     background-color:#d65050;
     color: aliceblue;
     padding: 40px 50px 40px 50px;
-    
 }
 
 .card-body {
-    
     display:flex;
     justify-content: center;
     align-items: center;
-
 }
 
 div.card-body> svg {
@@ -299,11 +290,10 @@ div.card-body> svg {
     height: 80px; 
     margin-bottom: 30px;  
 }
+
 div.card-body> svg:hover {
     animation: Rotation linear 2s;
-    
 }
-
 
 div.card-body> .number {
     font-size: 50px;
@@ -321,6 +311,14 @@ div.card-body> .number {
     color: #d65050;
     border-bottom: 2px solid;
     border-color: #383e56;
+}
+
+@media (min-width: 320px) and (max-width:750px) {
+    .title-socialMedia {
+        margin-left: 30%;
+        margin-right:30%;
+        margin-top: 10%;
+    }
 }
 
 .logoMedia {
@@ -355,8 +353,6 @@ div.card-body> .number {
     height: 80px;
 }
 
-
-
 .facebook> h4 {
     color :#383e56;
     font-size: 30px;
@@ -368,6 +364,23 @@ div.card-body> .number {
     width: 80px;
     height: 80px;
    
+}
+
+@media (min-width: 320px) and (max-width:750px) {
+    .twitter, .facebook {
+        padding: 10px 10px 10px 10px;
+        
+    }
+
+    .twitter> svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .facebook> svg {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 /* footer */
