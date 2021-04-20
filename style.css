@@ -19,21 +19,20 @@
         transform: rotate(360deg)
     }
 }
-
 *,
 *::before,
 *::after {
   margin: 2px;
   
   box-sizing: border-box;
-}
+} 
 
-@media (min-width: 320px) and (max-width:750px) {
-    html{
-        width:100%;
+@media screen and (max-width:700px) and (orientation: portrait) {
+     body {
+        width: auto;
+        margin: 0;
     }
 }
-
 
 
 
@@ -96,7 +95,7 @@ background-color:#383e56;
     
 }
 
-@media (min-width: 320px) and (max-width:750px) {
+@media screen and (max-width:750px) {
     .title-head {
         margin-left: 30%;
         margin-right:30%;
@@ -233,7 +232,7 @@ img:hover + div.img1 {
     flex-direction: row;
     font-family: var(--body-font)
 }
-  
+
 
 .card-body{
     display:flex;
@@ -241,8 +240,10 @@ img:hover + div.img1 {
     flex-direction: column;
 }
 
-a .btn {
-    width: 20px;
+a.btn {
+    
+    display: flex;
+    flex-direction:row;
 } 
 
 @media (min-width: 320px) and (max-width:750px) {
@@ -251,6 +252,9 @@ a .btn {
         flex-direction: column;
         width:100%;
         justify-content:center;
+    }
+    .card {
+        width:auto;
     }
 }
 
@@ -300,6 +304,17 @@ div.card-body> .number {
 
 }
 
+@media (min-width: 320px) and (max-width:750px) {
+    div.card-body> svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    div.card-body> .number {
+        font-size: 30px;
+    }
+}
+
 /* section réseaux */
 
 .title-socialMedia{
@@ -327,9 +342,6 @@ div.card-body> .number {
     margin-bottom: 100px;
     display:flex;
     justify-content: center;
-    
-    
-
 }
 
 .twitter, .facebook {
@@ -369,7 +381,6 @@ div.card-body> .number {
 @media (min-width: 320px) and (max-width:750px) {
     .twitter, .facebook {
         padding: 10px 10px 10px 10px;
-        
     }
 
     .twitter> svg {
@@ -385,9 +396,9 @@ div.card-body> .number {
 
 /* footer */
 
-footer{
+footer> .container-fluid{
     display: flex;
-    justify-content:row;
+    justify-content:space-around;
     margin-bottom: 30px;
 }
 
@@ -397,15 +408,24 @@ footer{
     background-color:black;
 }
 
-.footerText{
+@media (min-width: 320px) and (max-width:750px) {
+    .movieClub {
+        display:none;
+    }
+}
+.footerText {
+    background-color: #383e56;
+}
+
+.footerText> .container{
     
     padding: 20px 40px 20px 40px;
     background-color:#383e56;
     color:aliceblue;
-    justify-content: flex-end;
+   
 }
 
-.footerText> svg{
+.footerText> .container> svg{
     color:#d65050;
 
 }
@@ -417,11 +437,11 @@ footer{
     font-family: var(--body-font);
     text-align: center;
     margin-bottom: 40px;
-
-
 }
 
-
+.breadcrumb{
+    background-color: none;
+}
 
 .breadcrumb-item {
     margin-top: 20px;
