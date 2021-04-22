@@ -1,3 +1,3 @@
 # Fichier README.md
 
-Projet pour une association de Viet Vo Dao 
+Projet pour une association sportive de Viet Vo Dao 
