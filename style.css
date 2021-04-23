@@ -463,11 +463,12 @@ footer > .container-fluid {
 }
 
 .card-event1 {
-  display: flex;
-  justify-content: flex-start;
   font-family: var(--body-font);
-  font-size: 30px;
+  font-size: 20px;
+  
 }
+
+
 
 @media (min-width: 320px) and (max-width: 750px) {
   .card-event1 {
